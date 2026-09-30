@@ -1,0 +1,314 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+
+  <title>VayuVeer – IAF Agniveer Vayu Preparation</title>
+
+  <meta
+    name="description"
+    content="VayuVeer is an exam preparation app for IAF Agniveer Vayu aspirants. Practice questions, mock tests, reasoning, mathematics, English and GK."
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 50% 0%, #12345a 0%, #07111f 45%, #030711 100%);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    header {
+      padding: 22px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+
+    .brand img {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .version {
+      color: #9db0c7;
+      font-size: 13px;
+    }
+
+    .hero {
+      min-height: calc(100vh - 90px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 55px 0 70px;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.06);
+      border-radius: 50px;
+      color: #bcd0e7;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 78px);
+      line-height: 1;
+      margin-bottom: 22px;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #fff, #75bfff, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: clamp(18px, 3vw, 24px);
+      color: #c5d3e4;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+
+    .description {
+      max-width: 650px;
+      margin: auto;
+      color: #899bb0;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .app-icon {
+      width: 150px;
+      height: 150px;
+      border-radius: 32px;
+      object-fit: cover;
+      margin: 32px auto;
+      display: block;
+      box-shadow:
+        0 20px 70px rgba(0,0,0,.55),
+        0 0 50px rgba(55,150,255,.18);
+    }
+
+    .download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+      padding: 16px 32px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #1677ff, #4aa5ff);
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 800;
+      box-shadow: 0 12px 35px rgba(20,120,255,.3);
+      transition: .25s ease;
+    }
+
+    .download:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 45px rgba(20,120,255,.4);
+    }
+
+    .download small {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      opacity: .8;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 60px;
+    }
+
+    .feature {
+      padding: 22px 15px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.035);
+      border-radius: 18px;
+    }
+
+    .feature-icon {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .feature h3 {
+      font-size: 15px;
+      margin-bottom: 7px;
+    }
+
+    .feature p {
+      color: #8193a9;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0 35px;
+      color: #65778d;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      .features {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .app-icon {
+        width: 125px;
+        height: 125px;
+        border-radius: 27px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .features {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .feature {
+        padding: 18px 10px;
+      }
+
+      .download {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="icon.png" alt="VayuVeer">
+        <span>VayuVeer</span>
+      </div>
+
+      <div class="version">
+        Android • v1.0
+      </div>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container hero-content">
+
+      <div class="badge">
+        🇮🇳 Built for Defence Aspirants
+      </div>
+
+      <h1>
+        Prepare Smarter.<br>
+        <span>Become VayuVeer.</span>
+      </h1>
+
+      <p class="subtitle">
+        IAF Agniveer Vayu Exam Preparation App
+      </p>
+
+      <p class="description">
+        Practice questions, mock tests and focused preparation
+        for English, Mathematics, Reasoning and General Awareness —
+        all in one place.
+      </p>
+
+      <img
+        class="app-icon"
+        src="icon.png"
+        alt="VayuVeer App Icon"
+      >
+
+      <a
+        class="download"
+        href="VayuVeer.apk"
+        download
+      >
+        ⬇️ Download VayuVeer
+      </a>
+
+      <div class="features">
+
+        <div class="feature">
+          <div class="feature-icon">🧠</div>
+          <h3>Practice</h3>
+          <p>Improve your preparation with focused questions.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">📝</div>
+          <h3>Mock Tests</h3>
+          <p>Test yourself with exam-style practice.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">📚</div>
+          <h3>Study</h3>
+          <p>Prepare across important exam subjects.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">📊</div>
+          <h3>Track Progress</h3>
+          <p>Keep your preparation focused and consistent.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 VayuVeer • IAF Agniveer Vayu Preparation
+  </footer>
+
+</body>
+</html>
+```
